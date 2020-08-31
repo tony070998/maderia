@@ -1,0 +1,35 @@
+<div class="content">
+    <div class="content-left animate__animated animate__fadeInDown animate__delay-1s">
+        <h1>Luke Scott</h1>
+        <small>Builder-Carpenter</small>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, ea. Numquam veritatis voluptatem voluptate
+            perspiciatis dolorum magni saepe laboriosam nobis officiis at. Qui, quas debitis exercitationem quis
+            adipisci est ipsum!</p>
+        <div class="options">
+            <div class="btn"><a href="">Join Up</a></div>
+            <a class="seemore" href="">See more</a>
+        </div>
+        <div class="releases animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="img-realeases">
+                <img src="assets/pexels-cottonbro-5089128.jpg">
+            </div>
+            <div class="img-realeases">
+                <img src="assets/pexels-cottonbro-5095277.jpg">
+            </div>
+            <div class="img-realeases">
+                <img src="assets/pexels-stephan-streuders-3767849.jpg">
+            </div>
+            <div class="titulo-realeses">
+                <h1>realeses</h1>
+            </div>
+        </div>
+    </div>
+    <div class="content-right">
+        <img class="animate__animated" [class.animate__fadeInLeft]="show" [class.animate__fadeInRight]="!show"
+            [src]="urlImg">
+        <div class="controls">
+            <i (click)="cambiarImg()" class='bx bx-left-arrow-circle'></i>
+            <i (click)="cambiarImg()" class='bx bx-right-arrow-circle'></i>
+        </div>
+    </div>
+</div>
